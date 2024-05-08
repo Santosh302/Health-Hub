@@ -29,10 +29,10 @@ const userSchema = new Schema(
       minlength: [8, 'Password must be at least 8 characters'],
       select: false, // Will not select password upon looking up a document
     },
-   /*  subscription: {
+     subscription: {
       id: String,
       status: String,
-    }, */
+    }, 
     avatar: {
       public_id: {
         type: String,
