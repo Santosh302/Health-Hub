@@ -1,13 +1,9 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap's CSS
-
+import Signup from './pages/Signup.jsx'
 function App() {
   return (
     <div>
-       <div className="container">
-      <h1>Hello, Bootstrap!</h1>
-      <button className="btn btn-primary">Click me</button>
-    </div>
+      < Signup />
     </div>
   );
 }

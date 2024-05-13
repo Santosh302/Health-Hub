@@ -1,0 +1,17 @@
+.TextBold {
+    font-weight: 600;
+}
+.background{
+    background-color:whitesmoke;
+}
+.TextAlign{
+    text-align: center;
+}
+.ButtonText{
+    font-weight: 700;
+    
+}
+.cursor-pointer {
+    cursor: pointer;
+  }
+  
