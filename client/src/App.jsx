@@ -1,9 +1,9 @@
 import React from 'react';
-import OrderInformation from './pages/OrderInformation';
+import Offers from './pages/Offers';
 function App() {
   return (
     <div>
-      <OrderInformation/>
+      <Offers />
     </div>
   );
 }
