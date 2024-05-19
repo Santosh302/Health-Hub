@@ -1,9 +1,9 @@
 import React from 'react';
-import FranchiseLocations from './pages/FranchiseLocations';
+import ShippingGuide from './pages/ShippingGuide';
 function App() {
   return (
     <div>
-      < FranchiseLocations />
+      < ShippingGuide/>
     </div>
   );
 }

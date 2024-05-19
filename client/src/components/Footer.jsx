@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css'
 import CATALOG from '../../public/CATALOG.pdf'
+import PriceList from '../../public/PriceList.pdf'
 function Footer() {
 
     const newDate = new Date();
@@ -21,8 +22,8 @@ function Footer() {
         <div className="col-lg-3 col-sm-6">
         <h4>YOUR LINKS</h4>
           <a href="" className="d-block mt-4 no-decoration text-muted">Sitemap</a><hr />
-          <a href="" className="d-block no-decoration text-muted">Download Price list</a><hr />
-          <a href="" className="d-block no-decoration text-muted">International Rates</a><hr />
+          <a href="{PriceList}" target= "_blank" className="d-block no-decoration text-muted">Download Price list</a><hr />
+          <a href="#"  className="d-block no-decoration text-muted">International Rates</a><hr />
           <a href="" className="d-block no-decoration text-muted">Shippinng Guide</a><hr />
           <a href="" className="d-block no-decoration text-muted">Blogs & News</a>
         </div>
