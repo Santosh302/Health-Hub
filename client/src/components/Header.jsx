@@ -1,0 +1,194 @@
+import React from 'react';
+import { GoPersonFill, } from 'react-icons/go';
+import { IoMdSearch ,IoMdMail } from "react-icons/io";
+import { CiHeart, CiShoppingCart } from "react-icons/ci";
+import { FaSignInAlt } from "react-icons/fa";
+import { BiLogoWhatsapp, BiRupee } from "react-icons/bi";
+import logo from '../../public/logo.jpeg'
+import './Header.css';
+function Header() {
+  return (
+    <div>
+        
+
+        
+        {/* first section of navbar */}
+      <nav className="navbar navbar-expand-lg bg-success">
+        
+        <div className="container-fluid">
+            <ul class="nav  ">
+                <li class="nav-item  nav-tabs fw-bold">
+                     <a class="nav-link active" aria-current="page" href="#" style={{ color: '#ffb400' }}>DOCTOR COW STORE</a>
+                     </li>
+  <li className='nav-item me-5 pe-5 fw-bold'>
+    <a className="nav-link text-white  header-text-hover" href="#" > GAU SEVA DONATION</a>
+  </li>
+</ul>
+
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div
+            className="collapse navbar-collapse justify-content-between align-items-center"
+            id="navbarSupportedContent"
+          >
+            <ul className="navbar-nav ms-auto   ">
+                <li className="nav-item active  " >
+                    <a className="nav-link " href="#" style={{ color: '#ffb400' }}><GoPersonFill  className='mb-1'/> ACCEPT PAYMENT </a>
+                </li>
+              <li className="nav-item ">
+              <a className="nav-link text-white  header-text-hover" href="#" ><CiHeart style={{fontSize:'21'}}/> WISHLIST </a>
+              </li>
+              <li className="nav-item   ">
+              <a className="nav-link text-white  header-text-hover" href="#" ><GoPersonFill  className='mb-1'/>SIGN UP</a>
+              </li>  
+                  <li className='nav-item me-5 pe-5'>
+                  <a className="nav-link text-white  header-text-hover" href="#" >{<FaSignInAlt />} SIGN IN </a>
+                  </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      {/* Second section of navbar */}
+      <div class="row mt-3 d-flex justify-content-around">
+        <div className='col' >
+            <img src={logo} alt="" style={{ height: '70px', width:'70px', marginLeft:'100px'}} />
+        </div>
+        {/* second-col */}
+        <div className='col mb-3'>
+    <div class="input-group mt-1 ">
+        <input type="text" class="form-control" placeholder="Search entire store here..." aria-label="Recipient's username" aria-describedby="button-addon2" />
+         <button class="btn btn-outline-secondary bg-success text-white " type="button" ><IoMdSearch /></button>
+    </div>
+    <div className='d-flex justify-content-between'>
+    <span className='text-success'> <BiLogoWhatsapp /> +91-7355651198</span>
+    <span className='text-success'><IoMdMail /> supporth@healthhub.info</span>
+    </div>
+    
+        </div>
+        {/* third-col */}
+        <div class="col d-flex " style={{marginLeft:'200px'}} >
+        <div >
+        <button type="button" class="btn btn-success rounded-circle position-relative" style={{height:'75px', width:'75px'}}>
+    <CiShoppingCart style={{height:'43px', width:'43px'}}/>
+  <span class="position-absolute top-40 start-40 translate-middle badge rounded-pill bg-secondary" >
+    0
+    <span class="visually-hidden">unread messages</span>
+  </span>
+</button>
+        </div>
+        <div className="fw-bold text-success" style={{marginLeft:'20px'}}>
+            <div>
+                <span >MY CART</span>
+            </div>
+            <div>
+            <span><BiRupee /> 0.00</span>
+            </div>
+        </div>
+
+        </div>
+
+    </div>
+
+    {/* Third Sectoin of navbar */}
+    <div className=' '>
+    <nav className="navbar navbar-expand-lg bg-success  ">
+        <div className="container-fluid  ">
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div
+            className="collapse navbar-collapse"
+            id="navbarSupportedContent"
+          >
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center" >
+              <li className="nav-item dropdown" style={{backgroundColor:"#b1d62a"}}>
+                <a
+                  className="nav-link text-white fw-bold " 
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="true"
+                >
+                  DESI COW PRODUCTS
+                </a>
+                <ul className="dropdown-menu show">
+                  <li>
+                    <a className="dropdown-item " href="#">
+                      Action
+                    </a>
+                  </li>
+                  <li>
+                  <hr className="dropdown-divider" />
+                    <a className="dropdown-item" href="#">
+                      Another action
+                    </a>
+                  </li>
+                  <li>
+                    <hr className="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Something else here
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link active text-white fw-bold header-text-hover" aria-current="page" href="#">
+                  HOME
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link text-white fw-bold header-text-hover" href="#">
+                  ABOUT US
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link text-white fw-bold header-text-hover" aria-disabled="true">
+                  BENEFITS
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link text-white fw-bold header-text-hover" aria-disabled="true">
+                  OFFERS
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link text-white fw-bold header-text-hover" aria-disabled="true">
+                  JOIN FRANCHISE
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link text-white fw-bold header-text-hover" aria-disabled="true">
+                  DISEASE VS PRODUCT
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</div>
+
+    </div>
+  );
+}
+
+export default Header;

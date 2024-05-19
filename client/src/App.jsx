@@ -1,9 +1,9 @@
 import React from 'react';
-import Signup from './pages/Signup.jsx'
+import Aboutus from './pages/Aboutus';
 function App() {
   return (
     <div>
-      < Signup />
+      < Aboutus />
     </div>
   );
 }

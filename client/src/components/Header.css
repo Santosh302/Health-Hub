@@ -1,0 +1,24 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar-nav .nav-item .nav-link.header-text-hover:hover {
+    color: #ffb400 !important;
+  }
+/* .header-button{
+    color:#ffb400;
+    background-color: white;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: none;
+    padding: 7px;
+}  
+ */
+ .navbar-nav.justify-content-center {
+    margin-left: auto;
+    margin-right: auto;
+    
+   
+  }
+  
