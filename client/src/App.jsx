@@ -1,9 +1,9 @@
 import React from 'react';
-import ShippingGuide from './pages/ShippingGuide';
+import Contact from'./pages/Contact.jsx';
 function App() {
   return (
     <div>
-      < ShippingGuide/>
+      <Contact/>
     </div>
   );
 }
