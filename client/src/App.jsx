@@ -1,9 +1,9 @@
 import React from 'react';
-import Aboutus from './pages/Aboutus';
+import FranchiseLocations from './pages/FranchiseLocations';
 function App() {
   return (
     <div>
-      < Aboutus />
+      < FranchiseLocations />
     </div>
   );
 }
