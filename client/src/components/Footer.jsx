@@ -1,6 +1,5 @@
 import React from 'react';
 import './Footer.css';
-import HomeLayout from '../layouts/HomeLayout'
 import { Link } from 'react-router-dom';
 import { FaSquareFacebook, FaSquareInstagram, FaLinkedin, FaSquareTwitter } from "react-icons/fa6";
 import CATALOG from '../../public/CATALOG.pdf';
@@ -19,37 +18,37 @@ function Footer() {
           <Link to="/about" className="d-block mt-4 no-decoration text-muted">About Us</Link>
 
           <hr />
-          <a href="#" className="d-block no-decoration text-muted">Support for Cow Care</a>
+          <Link to ="/SupportForCowCare" className="d-block no-decoration text-muted">Support for Cow Care</Link>
           <hr />
-          <a href={CATALOG} target="_blank" className="d-block no-decoration text-muted">Download Catalog</a>
+          <Link to ={CATALOG} target="_blank" className="d-block no-decoration text-muted">Download Catalog</Link>
           <hr />
-          <a href="#" className="d-block no-decoration text-muted">Franchise Location</a>
+          <Link to="/FranchiseLocations" className="d-block no-decoration text-muted">Franchise Locations</Link>
           <hr />
-          <a href="#" className="d-block no-decoration text-muted">Contact Us</a>
+          <Link to="/Contact" className="d-block no-decoration text-muted">Contact Us</Link>
         </div>
         <div className="col-lg-3 col-sm-6">
           <h4>YOUR LINKS</h4>
-          <a href="#" className="d-block mt-4 no-decoration text-muted">Sitemap</a>
+          <Link to="/Sitemap" className="d-block mt-4 no-decoration text-muted">Sitemap</Link>
           <hr />
-          <a href={PriceList} target="_blank" className="d-block no-decoration text-muted">Download Price List</a>
+          <Link to={PriceList} target="_blank" className="d-block no-decoration text-muted">Download Price List</Link>
           <hr />
-          <a href="#" className="d-block no-decoration text-muted">International Rates</a>
+          <Link to="/InternationalRates" className="d-block no-decoration text-muted">International Rates</Link>
           <hr />
-          <a href="#" className="d-block no-decoration text-muted">Shipping Guide</a>
+          <Link to="/ShippingGuide" className="d-block no-decoration text-muted">Shipping Guide</Link>
           <hr />
-          <a href="#" className="d-block no-decoration text-muted">Blogs & News</a>
+          <Link to="#" className="d-block no-decoration text-muted">Blogs & News</Link>
         </div>
         <div className="col-lg-3 col-sm-6">
           <h4>SUPPORT</h4>
-          <a href="#" className="d-block mt-4 no-decoration text-muted">Track Your Order</a>
+          <Link to="/OrderInformation" className="d-block mt-4 no-decoration text-muted">Track Your Order</Link>
           <hr />
-          <a href="#" className="d-block no-decoration text-muted">FAQ</a>
+          <Link to="/Faq" className="d-block no-decoration text-muted">FAQ</Link>
           <hr />
-          <a href="#" className="d-block no-decoration text-muted">Orders and Returns</a>
+          <Link to="/OrderInformation" className="d-block no-decoration text-muted">Orders and Returns</Link>
           <hr />
-          <a href="#" className="d-block no-decoration text-muted">Live Chat</a>
+          <Link to="/LiveChat" className="d-block no-decoration text-muted">Live Chat</Link>
           <hr />
-          <a href="#" className="d-block no-decoration text-muted">Customer Services</a>
+          <Link to="/CustomerService" className="d-block no-decoration text-muted">Customer Services</Link>
         </div>
         <div className="col-lg-3 col-sm-6">
           <h4>HEALTHHUB FOUNDATION</h4>

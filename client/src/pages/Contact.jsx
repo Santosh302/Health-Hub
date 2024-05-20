@@ -1,8 +1,10 @@
 import React from 'react'
 import './Signin.css'
+import HomeLayout from '../layouts/HomeLayout'
+
 function Contact() {
   return (
-    <>
+    <HomeLayout>
          <div class=" card container-fluid  col-5 p-3 mt-5  background ">
         <h4 class="TextAlign">Contact Form</h4>
       <form >
@@ -25,7 +27,7 @@ function Contact() {
 
 </form>
     </div>
-    </>
+    </HomeLayout>
   )
 }
 
