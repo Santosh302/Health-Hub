@@ -18,37 +18,37 @@ function Footer() {
           <Link to="/about" className="d-block mt-4 no-decoration text-muted">About Us</Link>
 
           <hr />
-          <Link to ="/SupportForCowCare" className="d-block no-decoration text-muted">Support for Cow Care</Link>
+          <Link to ="/supportForCowCare" className="d-block no-decoration text-muted">Support for Cow Care</Link>
           <hr />
           <Link to ={CATALOG} target="_blank" className="d-block no-decoration text-muted">Download Catalog</Link>
           <hr />
-          <Link to="/FranchiseLocations" className="d-block no-decoration text-muted">Franchise Locations</Link>
+          <Link to="/franchiseLocations" className="d-block no-decoration text-muted">Franchise Locations</Link>
           <hr />
-          <Link to="/Contact" className="d-block no-decoration text-muted">Contact Us</Link>
+          <Link to="/contact" className="d-block no-decoration text-muted">Contact Us</Link>
         </div>
         <div className="col-lg-3 col-sm-6">
           <h4>YOUR LINKS</h4>
-          <Link to="/Sitemap" className="d-block mt-4 no-decoration text-muted">Sitemap</Link>
+          <Link to="/sitemap" className="d-block mt-4 no-decoration text-muted">Sitemap</Link>
           <hr />
           <Link to={PriceList} target="_blank" className="d-block no-decoration text-muted">Download Price List</Link>
           <hr />
-          <Link to="/InternationalRates" className="d-block no-decoration text-muted">International Rates</Link>
+          <Link to="/internationalRates" className="d-block no-decoration text-muted">International Rates</Link>
           <hr />
-          <Link to="/ShippingGuide" className="d-block no-decoration text-muted">Shipping Guide</Link>
+          <Link to="/shippingGuide" className="d-block no-decoration text-muted">Shipping Guide</Link>
           <hr />
           <Link to="#" className="d-block no-decoration text-muted">Blogs & News</Link>
         </div>
         <div className="col-lg-3 col-sm-6">
           <h4>SUPPORT</h4>
-          <Link to="/OrderInformation" className="d-block mt-4 no-decoration text-muted">Track Your Order</Link>
+          <Link to="/orderInformation" className="d-block mt-4 no-decoration text-muted">Track Your Order</Link>
           <hr />
-          <Link to="/Faq" className="d-block no-decoration text-muted">FAQ</Link>
+          <Link to="/faq" className="d-block no-decoration text-muted">FAQ</Link>
           <hr />
-          <Link to="/OrderInformation" className="d-block no-decoration text-muted">Orders and Returns</Link>
+          <Link to="/orderInformation" className="d-block no-decoration text-muted">Orders and Returns</Link>
           <hr />
-          <Link to="/LiveChat" className="d-block no-decoration text-muted">Live Chat</Link>
+          <Link to="/liveChat" className="d-block no-decoration text-muted">Live Chat</Link>
           <hr />
-          <Link to="/CustomerService" className="d-block no-decoration text-muted">Customer Services</Link>
+          <Link to="/customerService" className="d-block no-decoration text-muted">Customer Services</Link>
         </div>
         <div className="col-lg-3 col-sm-6">
           <h4>HEALTHHUB FOUNDATION</h4>

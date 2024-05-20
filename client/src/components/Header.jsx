@@ -1,24 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { GoPersonFill, } from 'react-icons/go';
-import { IoMdSearch ,IoMdMail } from "react-icons/io";
+import { IoMdSearch ,IoMdMail, IoIosArrowDropdown } from "react-icons/io";
 import { CiHeart, CiShoppingCart } from "react-icons/ci";
 import { FaSignInAlt } from "react-icons/fa";
 import { BiLogoWhatsapp, BiRupee } from "react-icons/bi";
-import logo from '../../public/logo.jpeg'
+import logo from '../../public/logo.jpeg';
 import './Header.css';
+
 function Header() {
   return (
-    <div>
-        
-
-        
+    <div>        
         {/* first section of navbar */}
       <nav className="navbar navbar-expand-lg bg-success">
         
         <div className="container-fluid">
             <ul class="nav  ">
                 <li class="nav-item  nav-tabs fw-bold">
-                     <a class="nav-link active" aria-current="page" href="#" style={{ color: '#ffb400' }}>DOCTOR COW STORE</a>
+                     <Link class="nav-link active" aria-current="page" to="/s 7" style={{ color: '#ffb400' }}>DOCTOR COW STORE</Link>
                      </li>
   <li className='nav-item me-5 pe-5 fw-bold'>
     <a className="nav-link text-white  header-text-hover" href="#" > GAU SEVA DONATION</a>
@@ -42,16 +41,16 @@ function Header() {
           >
             <ul className="navbar-nav ms-auto   ">
                 <li className="nav-item active  " >
-                    <a className="nav-link " href="#" style={{ color: '#ffb400' }}><GoPersonFill  className='mb-1'/> ACCEPT PAYMENT </a>
+                    <Link className="nav-link " to="/acceptPayment" style={{ color: '#ffb400' }}><GoPersonFill  className='mb-1'/> ACCEPT PAYMENT </Link>
                 </li>
               <li className="nav-item ">
-              <a className="nav-link text-white  header-text-hover" href="#" ><CiHeart style={{fontSize:'21'}}/> WISHLIST </a>
+              <Link className="nav-link text-white  header-text-hover" to="*" ><CiHeart style={{fontSize:'21'}}/> WISHLIST </Link>
               </li>
               <li className="nav-item   ">
-              <a className="nav-link text-white  header-text-hover" href="#" ><GoPersonFill  className='mb-1'/>SIGN UP</a>
+              <Link className="nav-link text-white  header-text-hover" to="/signin" ><GoPersonFill  className='mb-1'/>SIGN UP</Link>
               </li>  
                   <li className='nav-item me-5 pe-5'>
-                  <a className="nav-link text-white  header-text-hover" href="#" >{<FaSignInAlt />} SIGN IN </a>
+                  <Link className="nav-link text-white  header-text-hover" to="/signup" >{<FaSignInAlt />} SIGN IN </Link>
                   </li>
             </ul>
           </div>
@@ -120,16 +119,16 @@ function Header() {
           >
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center" >
               <li className="nav-item dropdown" style={{backgroundColor:"#b1d62a"}}>
-                <a
+                <Link
                   className="nav-link text-white fw-bold " 
-                  href="#"
+                  to="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="true"
                 >
-                  DESI COW PRODUCTS
-                </a>
-                <ul className="dropdown-menu show">
+                  DESI COW PRODUCTS  <IoIosArrowDropdown className='fs-4'/>
+                </Link>
+                <ul className="dropdown-menu ">
                   <li>
                     <a className="dropdown-item " href="#">
                       Action
@@ -152,34 +151,34 @@ function Header() {
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link active text-white fw-bold header-text-hover" aria-current="page" href="#">
+                <Link className="nav-link active text-white fw-bold header-text-hover" aria-current="page" to="/">
                   HOME
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white fw-bold header-text-hover" href="#">
+                <Link className="nav-link text-white fw-bold header-text-hover" to="/about">
                   ABOUT US
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white fw-bold header-text-hover" aria-disabled="true">
+                <Link to="/benifits" className="nav-link text-white fw-bold header-text-hover" aria-disabled="true">
                   BENEFITS
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white fw-bold header-text-hover" aria-disabled="true">
+                <Link to="/offers" className="nav-link text-white fw-bold header-text-hover" aria-disabled="true">
                   OFFERS
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white fw-bold header-text-hover" aria-disabled="true">
+                <Link to="/joinFranchise" className="nav-link text-white fw-bold header-text-hover" aria-disabled="true">
                   JOIN FRANCHISE
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white fw-bold header-text-hover" aria-disabled="true">
+                <Link  to ="/diseaseVsProducts"className="nav-link text-white fw-bold header-text-hover" aria-disabled="true">
                   DISEASE VS PRODUCT
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
