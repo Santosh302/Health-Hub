@@ -6,4 +6,18 @@
   .no-decoration:hover {
     color: #ffb400 !important;
   }
+  .footer {
+    background-color: #343a40;
+    color: white;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    height: 10vh;
+}
+.footer a {
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.footer a:hover {
+    color: #ffc107;
+}
   
