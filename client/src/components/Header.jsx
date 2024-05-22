@@ -47,10 +47,10 @@ function Header() {
               <Link className="nav-link text-white  header-text-hover" to="*" ><CiHeart style={{fontSize:'21'}}/> WISHLIST </Link>
               </li>
               <li className="nav-item   ">
-              <Link className="nav-link text-white  header-text-hover" to="/signin" ><GoPersonFill  className='mb-1'/>SIGN UP</Link>
+              <Link className="nav-link text-white  header-text-hover" to="/signup" ><GoPersonFill  className='mb-1'/>SIGN UP</Link>
               </li>  
                   <li className='nav-item me-5 pe-5'>
-                  <Link className="nav-link text-white  header-text-hover" to="/signup" >{<FaSignInAlt />} SIGN IN </Link>
+                  <Link className="nav-link text-white  header-text-hover" to="/signin" >{<FaSignInAlt />} SIGN IN </Link>
                   </li>
             </ul>
           </div>
