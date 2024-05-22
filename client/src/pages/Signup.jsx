@@ -96,7 +96,7 @@ function Signup() {
         <div >
         <label htmlFor="image_uploads" className="d-flex justify-content-center align-items-center cursor-pointer">
           { previewImage ? (
-               <img className="rounded-circle mx-auto d-block" style={{ width: '150px', height: '150px' }} src={previewImage} alt="Preview Image" />
+               <img className="rounded-circle mx-auto d-block" style={{ width: '70px', height: '60px'}}src={previewImage} alt="Preview Image" />
           ) :(
             <BsPersonCircle  className='ml-auto ' style={{ width: '70px', height: '60px'}} />
           ) }                                             
