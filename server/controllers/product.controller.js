@@ -6,7 +6,7 @@ import cloudinary from 'cloudinary';
 import asyncHandler from '../middlewares/asyncHandler.middleware';
 import Product from '../models/product.model.js';
 import AppError from '../utils/appError';
-import products from 'razorpay/dist/types/products.js';
+
 
 /**
  * @ALL_PRODUCTS
