@@ -32,7 +32,7 @@ function FranchiseLocations() {
       >
         <ol className="breadcrumb">
           <li className="breadcrumb-item fw-light fs-5"><Link to="/" className='text-decoration-none text-muted'>Home</Link></li>
-          <li className="breadcrumb-item active text-dark fw-normal fs-5" aria-current="page">Support for Cow Care</li>
+          <li className="breadcrumb-item active text-dark fw-normal fs-5" aria-current="page">Franchise Locations</li>
         </ol>
       </nav>
       <div className="card me-5 ms-5">

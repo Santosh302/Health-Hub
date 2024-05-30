@@ -1,5 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import RequireAuth from './components/Auth/RequireAuth'
 import Home from './pages/Home';
 import Signin from './pages/Signin.jsx';
 import Signup from './pages/Signup.jsx';
@@ -23,10 +25,14 @@ import OrderInformation from './pages/OrderInformation.jsx';
 import Faq from './pages/Faq.jsx';
 import LiveChat from './pages/LiveChat.jsx';
 import CustomerService from './pages/CustomerService.jsx';
-
-
+import Checkout from './pages/Payment/Checkout.jsx';
+import CheckoutFailure from './pages/Payment/CheckoutFailure.jsx';
+import CheckoutSuccess from './pages/Payment/CheckoutSuccess.jsx';
+import EditProfile from './pages/User/EditProfile.jsx';
+import Profile from './pages/User/Profile.jsx';
 function App() {
   return (
+      
     
       <Routes>
         <Route path='/' element={<Home />} />
@@ -36,10 +42,22 @@ function App() {
         <Route path='/benifits' element={<Benifits />} />
         <Route path='/offers' element={<Offers />} />
         <Route path='/joinFranchise' element={<JoinFranchise />} />
-        <Route path='/diseaseVsProducts' element={<DiseaseVsProducts />} />
-
-    
+        <Route path='/diseaseVsProducts' element={<DiseaseVsProducts />} />    
         <Route path='/about' element={<Aboutus />} />
+
+        <Route element={<RequireAuth allowedRoles={["ADMIN", "USER"]} />}>
+        <Route path="/user/profile" element={<Profile />} />
+        <Route path="/user/editprofile" element={<EditProfile />} />
+
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/checkout/success" element={<CheckoutSuccess />} />
+        <Route path="/checkout/fail" element={<CheckoutFailure />} />
+      </Route>
+
+      {/*  <Route element={<RequireAuth allowedRoles={["ADMIN"]} />}>
+        <Route path="/course/create" element={<CreateCourse />} />
+      </Route> 
+ */}
         <Route path='/supportForCowCare' element={<SupportForCowCare />} />
         <Route path='/franchiseLocations' element={<FranchiseLocations />} />
         <Route path='/contact' element={<Contact />} />
@@ -50,11 +68,10 @@ function App() {
         <Route path='/faq' element={<Faq />} />
         <Route path='/liveChat' element={<LiveChat />} />
         <Route path='/customerService' element={<CustomerService />} />
-
         <Route path='/denied' element={<Denied />} />
       <Route path='*' element={<Notfound />} />
       </Routes>
-    
+     
   );
 }
 

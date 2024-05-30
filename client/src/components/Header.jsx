@@ -126,9 +126,9 @@ function Header() {
                   data-bs-toggle="dropdown"
                   aria-expanded="true"
                 >
-                  DESI COW PRODUCTS  <IoIosArrowDropdown className='fs-4'/>
+                  DESI COW PRODUCTS  {/* <IoIosArrowDropdown className='fs-4'/> */}
                 </Link>
-                <ul className="dropdown-menu ">
+                {/* <ul className="dropdown-menu ">
                   <li>
                     <a className="dropdown-item " href="#">
                       Action
@@ -148,7 +148,7 @@ function Header() {
                       Something else here
                     </a>
                   </li>
-                </ul>
+                </ul> */}
               </li>
               <li className="nav-item">
                 <Link className="nav-link active text-white fw-bold header-text-hover" aria-current="page" to="/">
