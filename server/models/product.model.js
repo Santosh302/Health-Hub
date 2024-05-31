@@ -37,7 +37,7 @@ const productSchema = new Schema(
         },
         description:{
             type:String,
-            required:[ture,'Description is required'],
+            required:[true,'Description is required'],
             minlength:[10, 'Description must be atleast 10 character long'],
         },
        

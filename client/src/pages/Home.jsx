@@ -1,6 +1,6 @@
 import React from 'react';
 import HomeLayout from '../layouts/HomeLayout';
-import MyCart from '../components/Cart/MyCart.jsx'
+import MyCart from '../components/Cart/MyCart1.jsx'
 
 function Home() {
 

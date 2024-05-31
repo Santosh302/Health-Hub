@@ -25,16 +25,23 @@ import OrderInformation from './pages/OrderInformation.jsx';
 import Faq from './pages/Faq.jsx';
 import LiveChat from './pages/LiveChat.jsx';
 import CustomerService from './pages/CustomerService.jsx';
+
 import Checkout from './pages/Payment/Checkout.jsx';
 import CheckoutFailure from './pages/Payment/CheckoutFailure.jsx';
 import CheckoutSuccess from './pages/Payment/CheckoutSuccess.jsx';
+
 import EditProfile from './pages/User/EditProfile.jsx';
 import Profile from './pages/User/Profile.jsx';
+
+import ProductDescription from './pages/Product/ProductDescription.jsx';
+import ProductList from './pages/Product/ProductList.jsx';
+import CreateProduct from './pages/Product/CreateProduct.jsx';
+
 function App() {
   return (
-      
     
-      <Routes>
+    
+     <Routes>
         <Route path='/' element={<Home />} />
         <Route path="/acceptPayment" element={<AcceptPayment/>} />
         <Route path='/signin' element={<Signin />} />
@@ -44,6 +51,9 @@ function App() {
         <Route path='/joinFranchise' element={<JoinFranchise />} />
         <Route path='/diseaseVsProducts' element={<DiseaseVsProducts />} />    
         <Route path='/about' element={<Aboutus />} />
+        
+        <Route path='/products' element={<ProductList />} />
+        <Route path='/product/description' element={<ProductDescription />} />
 
         <Route element={<RequireAuth allowedRoles={["ADMIN", "USER"]} />}>
         <Route path="/user/profile" element={<Profile />} />
@@ -52,13 +62,13 @@ function App() {
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/checkout/success" element={<CheckoutSuccess />} />
         <Route path="/checkout/fail" element={<CheckoutFailure />} />
-      </Route>
-
-      {/*  <Route element={<RequireAuth allowedRoles={["ADMIN"]} />}>
-        <Route path="/course/create" element={<CreateCourse />} />
       </Route> 
- */}
-        <Route path='/supportForCowCare' element={<SupportForCowCare />} />
+
+       <Route element={<RequireAuth allowedRoles={["ADMIN"]} />}>
+        <Route path="/product/create" element={<CreateProduct />} />
+      </Route> 
+ 
+         <Route path='/supportForCowCare' element={<SupportForCowCare />} />
         <Route path='/franchiseLocations' element={<FranchiseLocations />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/sitemap' element={<Sitemap />} />
@@ -70,7 +80,7 @@ function App() {
         <Route path='/customerService' element={<CustomerService />} />
         <Route path='/denied' element={<Denied />} />
       <Route path='*' element={<Notfound />} />
-      </Routes>
+      </Routes>  
      
   );
 }

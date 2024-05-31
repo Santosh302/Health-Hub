@@ -1,11 +1,11 @@
 import fs from 'fs/promises';
-import path from './path';
+import path from 'path';
 
 import cloudinary from 'cloudinary';
 
-import asyncHandler from '../middlewares/asyncHandler.middleware';
+import asyncHandler from '../middlewares/asyncHandler.middleware.js';
 import Product from '../models/product.model.js';
-import AppError from '../utils/appError';
+import AppError from '../utils/appError.js';
 
 
 /**

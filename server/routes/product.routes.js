@@ -27,3 +27,5 @@ router
     .route('/:id')
     .put(isLoggedIn, authorizeRoles('ADMIN'), updateProductById)
     .delete(isLoggedIn, authorizeRoles('ADMIN'), deleteProductById); 
+
+export default router;
